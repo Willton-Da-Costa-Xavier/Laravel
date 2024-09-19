@@ -51,7 +51,7 @@
             </div>
         </nav>
     </header>
-    @yield('content')
+     @yield('content')
     <footer>
         <p>agencia WDX &copy;2024</p>
     </footer>
