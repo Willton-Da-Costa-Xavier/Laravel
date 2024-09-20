@@ -51,13 +51,23 @@
             </div>
         </nav>
     </header>
-     @yield('content')
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                    <p class="msg">{{session('msg')}}</p>
+                @endif    
+                @yield('content')
+            </div>
+        </div>
+    </main>
     <footer>
         <p>agencia WDX &copy;2024</p>
     </footer>
 
     <!-- script de ionicons -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
