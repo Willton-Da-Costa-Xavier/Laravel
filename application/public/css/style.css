@@ -189,13 +189,37 @@ header{
     margin: 20px 0;
 }
 
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+    display: flex;
+}
+
+#description-container{
+    margin-top: 30px;
+}
+
+/* Dashboard */
+.dashboard-title-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dashboard-events-container th{
+    width: 25%;
+}
+
 /* Rodape */
 
 footer{
     text-align: center;
     background-color: #353e48;
     color: #fff;
-    padding: 30px;
+    padding: 15px;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
